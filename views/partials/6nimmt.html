@@ -1,0 +1,41 @@
+<div class="row global-6nimmt">
+	<div class="col-md-9 col-6nimmt">
+		<div class="row row-6nimmt">		
+			<div class="col-md-3 cell-6nimmt text-center" ng-repeat="number in numberList track by $index" ng-class="getStatusClass($index)">
+				<button class="btn btn-link" ng-if="number>0" ng-click="toggleNumber(number)" ng-class="getSelectClass(number)">
+					{{number}}
+				</button>
+				<span ng-if="!(number>0)">
+					&nbsp;
+				</span>
+				
+			</div>
+		</div>
+	</div>
+	<div class="col-md-3">
+		<div class="row">		
+			<div class="col-md-12">
+				<button class="btn btn-info refresh" ng-click="generateData()"><i class="fa fa-refresh"></i></button>
+			</div>
+		</div>
+		<div class="row">		
+			<div class="col-md-12 cell-chosen">
+				{{chosenNumber}}
+			</div>
+			<div class="col-md-12">
+				<div ne-notification="'6Nimmt'"></div>
+			</div>
+		</div>
+		<div class="row" ng-if="errorList.length==0&&!step1Ended">		
+			<div class="col-md-12">
+				<button class="btn btn-info check"  ng-click="check()">{{'6nimmt.check' | translate}}</button>
+			</div>
+		</div>
+		<div class="row" ng-if="step2Ended">		
+			<div class="col-md-12">
+				<img src="img/share/1.png" width="100%" ng-if="maxFound">
+				<img src="img/share/0.png" width="100%" ng-if="!maxFound">
+			</div>
+		</div>
+	</div>
+</div>

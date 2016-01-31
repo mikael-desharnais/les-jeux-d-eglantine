@@ -1,0 +1,21 @@
+{
+	"id" : "1",
+	"title" : "Les jeux d'Églantine",
+	"add" : {
+		"check" : "VERIFIER !"
+	},
+	"6nimmt" : {
+		"check" : "VERIFIER !",
+		"nowFindBiggest" : "Bravo ! Maintenant trouve le plus grand nombre",
+		"errorRetry" : "Aïe tu as commis des erreurs, recommence !"
+	},
+	"lowerToUppercase" : {
+		"oups" : "Aïe, tu as fait erreur",
+		"welldone" : "Bravo !"
+	},
+	"handritingToScript" : {
+		"oups" : "Aïe, tu as fait erreur",
+		"welldone" : "Bravo !"
+	}
+	
+}

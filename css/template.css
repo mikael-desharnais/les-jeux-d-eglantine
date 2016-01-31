@@ -1,0 +1,213 @@
+#page-wrapper {
+	padding : 30px;
+}
+.navbar-brand {
+    height: 60px;
+    font-size: 30px;
+    line-height: 30px;
+}
+.navbar-default .navbar-nav>li>a{
+	font-size : 30px;
+}
+.ng-hide {
+	display : none;
+}
+
+
+.row-button .col-md-button {
+	height : 150px;
+	text-align : center;
+	font-size : 90px;
+	line-height : 150px;
+}
+.col-md-button a{
+	width: 100%;
+    display: inline-block;
+}
+.col-md-blue {
+	background-color : #2e81a0;
+}
+.col-md-blue a{
+	color : white;
+}
+.col-md-blue:hover{
+	background-color : white;
+	border : 1px solid #2e81a0;
+}
+.col-md-blue:hover a{
+	text-decoration : none;
+	color : #2e81a0;
+}
+.col-md-green {
+	background-color : #2ea02e;
+}
+.col-md-green a{
+	color : white;
+}
+.col-md-green:hover{
+	background-color : white;
+	border : 1px solid #2ea02e;
+}
+.col-md-green:hover a{
+	text-decoration : none;
+	color : #2ea02e;
+}
+.col-md-red {
+	background-color : #a02e89;
+}
+.col-md-red a{
+	color : white;
+}
+.col-md-red:hover{
+	background-color : white;
+	border : 1px solid #a02e89;
+}
+.col-md-red:hover a{
+	text-decoration : none;
+	color : #a02e89;
+}
+.col-md-orange {
+	background-color : #e7bf21;
+}
+.col-md-orange a{
+	color : white;
+}
+.col-md-orange:hover{
+	background-color : white;
+	border : 1px solid #e7bf21;
+}
+.col-md-orange:hover a{
+	text-decoration : none;
+	color : #e7bf21;
+}
+
+
+
+
+
+
+.row-add{
+	font-size : 90px;
+}
+.col-md-end {
+	border-bottom : 4px solid black;
+}
+.row-add input{
+	width : 100%;
+	text-align : center;
+	background-color : transparent;
+	border : 1px solid gray;
+	margin : 5px;
+	height : 150px;
+	font-size : 90px;
+}
+.add-success{
+	background-color : #b2e3b5 ;
+}
+.add-error{
+	background-color : #e3b5b2 ;
+}
+.row-add button{
+	font-size : 40px;
+	width : 100%;
+	height : 150px;
+	
+}
+
+.col-6nimmt{
+	border : 1px solid black;
+}
+.row-6nimmt {
+	font-size : 90px;
+}
+.row-6nimmt .col-gray{
+	background-color : #CDCDCD;
+}
+.cell-6nimmt{
+	line-height : 200px;
+}
+.cell-chosen{
+	font-size : 300px;
+	text-align : center;
+}
+.row-6nimmt .btn.cell-hidden,.row-6nimmt .btn.cell-hidden:hover{
+	color : transparent;
+}
+.row-6nimmt .cell-selected,.row-6nimmt .cell-selected:hover {
+	background-color : #96c896;
+}
+
+.row-6nimmt .cell-error,.row-6nimmt .cell-error:hover {
+	background-color : #c89c96;
+}
+
+.row-6nimmt .btn {
+	color : black;
+	outline: 0;
+	font-size : 90px;
+	text-decoration : none;
+	padding : 20px;
+	width : 168px;
+}
+.row-6nimmt .btn:hover {
+	color : black;
+	text-decoration : none;
+}
+.global-6nimmt .check{
+	font-size : 40px;
+	width : 100%;
+	height : 150px;
+}
+.global-6nimmt .refresh{
+	font-size : 40px;
+	width : 100%;
+	height : 100px;
+}
+
+@font-face {
+    font-family: "handwriting";
+    src: url('../fonts/DawningofaNewDay.ttf');
+}
+.handwriting{
+	font-family: "handwriting";
+}
+.global-hts input{
+	width : 100%;
+	text-align : center;
+	background-color : transparent;
+	border : 1px solid gray;
+	margin : 5px;
+	height : 150px;
+	font-size : 90px;
+	text-transform: uppercase;
+}
+.global-hts button.btn{
+	height : 150px;
+	font-size : 90px;
+}
+.global-hts{
+	font-size : 90px;
+}
+.global-hts .handwriting{
+	font-size : 200px;
+	line-height : 130px;
+}
+.global-hts .col-offset-top-1{
+	padding-top : 30px;
+}
+.global-hts .col-offset-top-10{
+	padding-top : 190px;
+}
+.global-hts .col-error {
+	font-size : 25px;
+}
+.global-hts .col-error .normal {
+	text-transform: uppercase;
+}
+.global-hts .col-error .handwriting {
+	font-size : 25px;
+	font-size: 60px;
+    line-height: 60px;
+}
+
+

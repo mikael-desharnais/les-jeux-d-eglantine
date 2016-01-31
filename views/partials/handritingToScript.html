@@ -1,0 +1,51 @@
+<div class="row form-group global-hts">
+	<div class="col-md-12">
+		<div class="row">
+			<div class="col-md-2 col-md-offset-2 text-center">
+				<span ng-show="!endReached">{{letterList.length+1}} ?</span>
+			</div>
+			<div class="col-md-2 col-md-offset-1 text-center">
+				{{foundLetterList.length}} <img src="img/share/1.png" width="90"/>
+			</div>
+			<div class="col-md-2 col-md-offset-1 text-center">
+				{{errorLetterList.length}} <img src="img/share/0.png" width="90"/>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-12 col-offset-top-1">
+		<div class="row" ng-if="!endReached">
+			<div class="col-md-3 text-right handwriting">
+				{{currentLetter}}
+			</div>
+			<div class="col-md-1 col-md-offset-1">
+				<i class="fa fa-arrow-right"></i>
+			</div>
+			<div class="col-md-2">
+				<input type="text" ng-model="response.value" class="form-control" ng-keydown="response.value=''">
+			</div>
+			<div class="col-md-4">
+				<button class="btn btn-info check"  ng-click="check()">{{'6nimmt.check' | translate}}</button>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-12 col-offset-top-1">
+		<div ne-notification="'HandritingToScript'"></div>
+		<div class="row">
+			<div class="col-md-2 col-md-offset-5 text-center col-error">
+				<div ng-repeat="error in errorLetterList">
+					{{error}}&nbsp;<i class="fa fa-arrow-right"></i>&nbsp;<span class="normal">{{error}}</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-12 col-offset-top-1">
+		<div class="row">
+			<div class="col-md-2 col-md-offset-5 text-center">
+				<button class="btn btn-info refresh" ng-click="generateData()"><i class="fa fa-refresh"></i></button>
+			</div>
+		</div>
+	</div>
+	
+		
+	</div>
+</div>

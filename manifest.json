@@ -1,0 +1,16 @@
+{
+   "manifest_version":2,
+   "name":"Les jeux d'Églantine",
+   "version":"1.0",
+   "permissions":[
+		"unlimitedStorage",
+		"notifications",
+		"fullscreen"
+   ],
+   "icons": { "16": "img/logo-16.png", "128": "img/logo-128.png" },
+   "app": {
+    "background": {
+      "scripts": ["js/background.js"]
+    }
+  }
+}
