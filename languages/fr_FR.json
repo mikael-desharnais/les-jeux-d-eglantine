@@ -16,6 +16,9 @@
 	"handritingToScript" : {
 		"oups" : "Aïe, tu as fait erreur",
 		"welldone" : "Bravo !"
+	},
+	"sort" : {
+		"check" : "VERIFIER !"
 	}
 	
 }

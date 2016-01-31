@@ -23,6 +23,8 @@ app.controller('6NimmtController',['$scope','NotificationService','$translate', 
 		}
 		if (Math.max.apply(null,temporaryNumberList)>$scope.chosenNumber){
 			temporaryNumberList.push(1);
+		}else {
+			temporaryNumberList.push($scope.selectAndRemoveElement(sourceData));
 		}
 		temporaryNumberList.length = 16;
 		$scope.numberList.length=0;

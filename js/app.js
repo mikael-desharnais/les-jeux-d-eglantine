@@ -16,6 +16,9 @@ app.config(function ($routeProvider) {
 	}).when('/lower-to-uppercase', {
 		templateUrl: 'views/partials/lowerToUppercase.html',
 		controller: 'LowerToUppercaseController'
+	}).when('/sort', {
+		templateUrl: 'views/partials/sort.html',
+		controller: 'SortController'
 	}).otherwise({
 		redirectTo: '/'
 	});

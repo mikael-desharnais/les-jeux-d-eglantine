@@ -1,0 +1,36 @@
+<div class="row global-sort">
+	<div class="col-md-12">
+		<div class="row">		
+			<div class="col-md-2 cell-sort text-center" ng-repeat="number in numberList track by $index" ng-class="getStatusClass($index)+' '+($index%5==0?'col-md-offset-1':'')">
+				<button class="btn btn-link" ng-click="toggleNumber(number)" ng-class="getSelectClass(number)">
+					{{number}}
+				</button>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-12 col-md-offset-1 col-offset-top-1" ng-show="selectedNumberList.length>0" ng-class="checkDone?'display-result':''">
+		<div class="row row-result">		
+			<div class="col-md-1 col-result" ng-repeat="number in selectedNumberList track by $index" ng-class="getStatusClass($index)+' '+getErrorClass($index)">
+				<button class="btn btn-link" ng-click="toggleNumber(number)">
+					{{number}}
+				</button>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-12 col-offset-top-1" ng-show="selectedNumberList.length==10&&!checkDone">
+		<div class="row">		
+			<div class="col-md-2 col-md-offset-5">
+				<button class="btn btn-info check"  ng-click="check()">{{'sort.check' | translate}}</button>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-12 col-offset-top-1" ng-show="checkDone">
+		<div class="row">		
+			<div class="col-md-2 col-md-offset-5">
+				<img src="img/share/1.png" width="100%" ng-if="allOk">
+				<img src="img/share/0.png" width="100%" ng-if="!allOk">
+			</div>
+		</div>
+	</div>
+	
+</div>
