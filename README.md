@@ -1,4 +1,4 @@
-# les-jeux-d-eglantine
+# Les jeux d'Églantine
 Application chrome de jeu pour enfant
 
 ## TODO :
