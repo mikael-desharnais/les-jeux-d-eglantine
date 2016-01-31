@@ -5,19 +5,19 @@ app.config(function ($routeProvider) {
 		templateUrl: 'views/partials/index.html',
 		controller: 'IndexController'
 	}).when('/add', {
-		templateUrl: 'views/partials/add.html',
+		templateUrl: 'module/add/view/add.html',
 		controller: 'AddController'
 	}).when('/6nimmt', {
-		templateUrl: 'views/partials/6nimmt.html',
+		templateUrl: 'module/6nimmt/view/6nimmt.html',
 		controller: '6NimmtController'
 	}).when('/handriting-to-script', {
-		templateUrl: 'views/partials/handritingToScript.html',
+		templateUrl: 'module/handwritingtoscript/view/handritingToScript.html',
 		controller: 'HandritingToScriptController'
 	}).when('/lower-to-uppercase', {
-		templateUrl: 'views/partials/lowerToUppercase.html',
+		templateUrl: 'module/lowertouppercase/view/lowerToUppercase.html',
 		controller: 'LowerToUppercaseController'
 	}).when('/sort', {
-		templateUrl: 'views/partials/sort.html',
+		templateUrl: 'module/sort/view/sort.html',
 		controller: 'SortController'
 	}).otherwise({
 		redirectTo: '/'

@@ -1,0 +1,45 @@
+@font-face {
+    font-family: "handwriting";
+    src: url('../fonts/DawningofaNewDay.ttf');
+}
+.handwriting{
+	font-family: "handwriting";
+}
+.global-hts input{
+	width : 100%;
+	text-align : center;
+	background-color : transparent;
+	border : 1px solid gray;
+	margin : 5px;
+	height : 150px;
+	font-size : 90px;
+	text-transform: uppercase;
+}
+.global-hts button.btn{
+	height : 150px;
+	font-size : 90px;
+}
+.global-hts{
+	font-size : 90px;
+}
+.global-hts .handwriting{
+	font-size : 200px;
+	line-height : 130px;
+}
+.global-hts .col-offset-top-1{
+	padding-top : 30px;
+}
+.global-hts .col-offset-top-10{
+	padding-top : 190px;
+}
+.global-hts .col-error {
+	font-size : 25px;
+}
+.global-hts .col-error .normal {
+	text-transform: uppercase;
+}
+.global-hts .col-error .handwriting {
+	font-size : 25px;
+	font-size: 60px;
+    line-height: 60px;
+}

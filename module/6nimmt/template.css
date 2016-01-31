@@ -1,0 +1,50 @@
+
+.col-6nimmt{
+	border : 1px solid black;
+}
+.row-6nimmt {
+	font-size : 90px;
+}
+.row-6nimmt .col-gray{
+	background-color : #CDCDCD;
+}
+.cell-6nimmt{
+	line-height : 200px;
+}
+.cell-chosen{
+	font-size : 300px;
+	text-align : center;
+}
+.row-6nimmt .btn.cell-hidden,.row-6nimmt .btn.cell-hidden:hover{
+	color : transparent;
+}
+.row-6nimmt .cell-selected,.row-6nimmt .cell-selected:hover {
+	background-color : #96c896;
+}
+
+.row-6nimmt .cell-error,.row-6nimmt .cell-error:hover {
+	background-color : #c89c96;
+}
+
+.row-6nimmt .btn {
+	color : black;
+	outline: 0;
+	font-size : 90px;
+	text-decoration : none;
+	padding : 20px;
+	width : 168px;
+}
+.row-6nimmt .btn:hover {
+	color : black;
+	text-decoration : none;
+}
+.global-6nimmt .check{
+	font-size : 40px;
+	width : 100%;
+	height : 150px;
+}
+.global-6nimmt .refresh{
+	font-size : 40px;
+	width : 100%;
+	height : 100px;
+}
