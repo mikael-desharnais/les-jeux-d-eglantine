@@ -1,5 +1,6 @@
-app.controller('HandritingToScriptController',['$scope','NotificationService','$translate', function($scope,NotificationService,$translate) {
+app.controller('HandritingToScriptController',['$scope','NotificationService','$translate','$rootScope', function($scope,NotificationService,$translate,$rootScope) {
 	
+	$rootScope.helpURL = 'module/handwritingtoscript/view/help.html'
 	
 	
 	$scope.selectAndRemoveElement = function(arr,allowFirstElement){

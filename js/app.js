@@ -29,5 +29,11 @@ app.config(function ($routeProvider) {
 		prefix: 'languages/',
 		suffix: '.json'
     });
+}]).run(['$rootScope', function ($rootScope) {
+	$rootScope.helpModal = {};
+	$rootScope.$on('$locationChangeStart', function() {
+		$rootScope.showBackButton = true;
+		$rootScope.showHelpButton = true;
+	});
 }]);
 

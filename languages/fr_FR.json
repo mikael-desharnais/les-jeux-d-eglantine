@@ -1,24 +1,37 @@
 {
 	"id" : "1",
 	"title" : "Les jeux d'Églantine",
+	"help" : "Aide",
 	"add" : {
-		"check" : "VERIFIER !"
+		"check" : "VERIFIER !",
+		"help1" : "Objectif : Réaliser l'addition fournie puis cliquer sur vérifier pour vérifier le résultat",
+		"help2" : "Info : Cliquer sur le bouton 'flèche en rond' pour obtenir une nouvelle addition"
 	},
 	"6nimmt" : {
 		"check" : "VERIFIER !",
 		"nowFindBiggest" : "Bravo ! Maintenant trouve le plus grand nombre",
-		"errorRetry" : "Aïe tu as commis des erreurs, recommence !"
+		"errorRetry" : "Aïe tu as commis des erreurs, recommence !",
+		"help1" : "Étape 1 : cliquer sur les nombres inférieurs au nombre écrit en gros puis cliquer sur Vérifier",
+		"help2" : "Étape 2 : Si vous avez terminé l'étape 1, cliquez sur le nombre le plus grand parmi ceux précédemment cliqués",
+		"help3" : "Ce jeu permet aux enfants de comprendre la mécanique de jeu du 6 qui prend"
 	},
 	"lowerToUppercase" : {
 		"oups" : "Aïe, tu as fait erreur",
-		"welldone" : "Bravo !"
+		"welldone" : "Bravo !",
+		"help1" : "Objectif : Pour chaque lettre minuscule indiquer la lettre correspondante du clavier",
+		"help2" : "Info : Cliquer sur le bouton 'flèche en rond' pour obtenir une nouvelle série de lettres"
 	},
 	"handritingToScript" : {
 		"oups" : "Aïe, tu as fait erreur",
-		"welldone" : "Bravo !"
+		"welldone" : "Bravo !",
+		"help1" : "Objectif : Pour chaque lettre cursive indiquer la lettre correspondante du clavier",
+		"help2" : "Info : Cliquer sur le bouton 'flèche en rond' pour obtenir une nouvelle série de lettres"
 	},
 	"sort" : {
-		"check" : "VERIFIER !"
+		"check" : "VERIFIER !",
+		"help1" : "Objectif : Cliquer sur les nombres par ordre croissant, une fois tous les nombres choisis, cliquez sur vérifier pour vérifier l'ordre",
+		"help2" : "Info : Cliquer sur le bouton 'flèche en rond' pour obtenir une nouvelle série de nombres",
+		"help3" : "Info : Pour enlever un nombre de la liste des nombres choisis, cliquez dessus"
 	}
 	
 }

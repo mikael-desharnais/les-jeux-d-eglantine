@@ -63,7 +63,12 @@
 		            <a class="navbar-brand" href="index.html">{{'title' | translate}}</a>
 		        </div>
 		        <ul class="nav navbar-nav navbar-right">
-		            <li>
+		            <li ng-if="showHelpButton">
+		            	<a ng-click="helpModal.setStatus(true)">
+		            		<i class="fa fa-question"></i>
+		            	</a>
+		            </li>
+		            <li ng-if="showBackButton">
 		            	<a href="#/">
 		            		<i class="fa fa-mail-reply"></i>
 		            	</a>
@@ -80,5 +85,18 @@
         <!-- /#page-wrapper -->
 
     </div>
+	<div class="modal" ne-direction="right" ne-status="helpModal" ne-modal>
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">{{'help' | translate}}</h4>
+				</div>
+				<div class="modal-body">
+					<div  ng-include="helpURL">
+					</div>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div>
 </body>
 </html>

@@ -28,7 +28,7 @@
 .global-sort .col-offset-top-1{
 	padding-top : 30px;
 }
-.global-sort .check{
+.global-sort .check,.global-sort .refresh{
 	font-size : 40px;
 	width : 100%;
 	height : 150px;
@@ -63,3 +63,26 @@
 	font-size : 60px;
 }
 
+@media (max-width: 1500px){
+	.global-sort .cell-sort {
+    	line-height: 100px;
+    }
+    .global-sort .row-result {
+    	font-size: 53px;
+    }
+    .global-sort .btn {
+        font-size: 46px;
+     }
+    .global-sort .row-result .btn {
+    	font-size: 45px;
+    }
+    .global-sort .check,.global-sort .refresh {
+	    height: 44px;
+	}
+	.global-sort .check-container,.global-sort .refresh-container{
+		font-size: 25px;
+	}
+	.global-sort .check-container .btn,.global-sort .refresh-container .btn{
+		font-size: 22px;
+	}
+}

@@ -25,3 +25,28 @@
 	height : 150px;
 	
 }
+
+@media (max-width: 1500px){
+	.global-add .hide-smaller{
+		display : none;
+	}
+	.global-add .col-md-1 {
+		width: 120px;
+	}
+	.global-add .add-line .col-md-end {
+		width: 100%;
+	}
+	.global-add .col-button {
+		width: 255px;
+	}
+	.row-add button {
+		height: 70px;
+	}
+	.row-add {
+		font-size: 62px;
+	}
+	.row-add input {
+		height: 80px;
+		font-size: 62px;
+	}
+}

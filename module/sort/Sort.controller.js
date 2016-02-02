@@ -1,8 +1,10 @@
-app.controller('SortController',['$scope','NotificationService','$translate', function($scope,NotificationService,$translate) {
+app.controller('SortController',['$scope','NotificationService','$translate','$rootScope', function($scope,NotificationService,$translate,$rootScope) {
 	
 	$scope.numberList = [];
 	$scope.errorList = [];
 	$scope.checkDone = false;
+	
+	$rootScope.helpURL = 'module/sort/view/help.html'
 	
 	$scope.generateData = function(){
 		NotificationService.clearSlot('Sort');

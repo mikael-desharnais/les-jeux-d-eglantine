@@ -1,6 +1,8 @@
-app.controller('AddController',['$scope', function($scope) {
+app.controller('AddController',['$scope','$rootScope', function($scope,$rootScope) {
 	$scope.number1 = [];
 	$scope.number2 = [];
+	
+	$rootScope.helpURL = 'module/add/view/help.html'
 	
 	$scope.ret = [];
 	$scope.result = [];

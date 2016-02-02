@@ -17,16 +17,18 @@
 			</div>
 		</div>
 	</div>
-	<div class="col-md-12 col-offset-top-1" ng-show="selectedNumberList.length==10&&!checkDone">
-		<div class="row">		
-			<div class="col-md-2 col-md-offset-5">
-				<button class="btn btn-info check"  ng-click="check()">{{'sort.check' | translate}}</button>
-			</div>
+	<div class="col-md-12 col-offset-top-1 check-container" ng-show="selectedNumberList.length==10&&!checkDone">
+		<div class="row">	
 		</div>
 	</div>
-	<div class="col-md-12 col-offset-top-1" ng-show="checkDone">
-		<div class="row">		
-			<div class="col-md-2 col-md-offset-5">
+	<div class="col-md-12 col-offset-top-1 ">
+			<div class="col-md-2 col-md-offset-3  check-container">
+				<button class="btn btn-info check"  ng-show="selectedNumberList.length==10&&!checkDone"  ng-click="check()">{{'sort.check' | translate}}</button>
+			</div>	
+			<div class="col-md-2 refresh-container">
+				<button class="btn btn-info refresh" ng-click="generateData()"><i class="fa fa-refresh"></i></button>
+			</div>
+			<div class="col-md-2" ng-show="checkDone">
 				<img src="img/share/1.png" width="100%" ng-if="allOk">
 				<img src="img/share/0.png" width="100%" ng-if="!allOk">
 			</div>

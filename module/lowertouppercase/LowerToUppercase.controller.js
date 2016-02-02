@@ -1,6 +1,7 @@
-app.controller('LowerToUppercaseController',['$scope','NotificationService','$translate', function($scope,NotificationService,$translate) {
+app.controller('LowerToUppercaseController',['$scope','NotificationService','$translate','$rootScope', function($scope,NotificationService,$translate,$rootScope) {
 	
 	
+	$rootScope.helpURL = 'module/handwritingtoscript/view/help.html'
 	
 	$scope.selectAndRemoveElement = function(arr,allowFirstElement){
 		if (angular.isDefined(allowFirstElement)&&!allowFirstElement){

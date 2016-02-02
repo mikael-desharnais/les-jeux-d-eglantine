@@ -1,49 +1,47 @@
 <div class="row form-group global-hts">
-	<div class="col-md-12">
+	<div class="col-xs-12">
 		<div class="row">
-			<div class="col-md-2 col-md-offset-2 text-center">
+			<div class="col-xs-4 text-center">
 				<span ng-show="!endReached">{{letterList.length+1}} ?</span>
 			</div>
-			<div class="col-md-2 col-md-offset-1 text-center">
+			<div class="col-xs-4 text-center">
 				{{foundLetterList.length}} <img src="img/share/1.png" width="90"/>
 			</div>
-			<div class="col-md-2 col-md-offset-1 text-center">
+			<div class="col-xs-4 text-center">
 				{{errorLetterList.length}} <img src="img/share/0.png" width="90"/>
 			</div>
 		</div>
 	</div>
-	<div class="col-md-12 col-offset-top-1">
+	<div class="col-xs-12 col-offset-top-1">
 		<div class="row" ng-if="!endReached">
-			<div class="col-md-3 text-right handwriting">
-				{{currentLetter}}
-			</div>
-			<div class="col-md-1 col-md-offset-1">
+			<div class="col-xs-12 text-center">
+				<span class="handwriting">{{currentLetter}}</span>
 				<i class="fa fa-arrow-right"></i>
-			</div>
-			<div class="col-md-2">
-				<input type="text" ng-model="response.value" class="form-control" ng-keydown="response.value=''">
-			</div>
-			<div class="col-md-4">
-				<button class="btn btn-info check"  ng-click="check()">{{'6nimmt.check' | translate}}</button>
+				<input type="text" ng-model="response.value" class="form-control" ng-keyup="check()">
 			</div>
 		</div>
 	</div>
-	<div class="col-md-12 col-offset-top-1">
-		<div ne-notification="'HandritingToScript'"></div>
-		<div class="row">
-			<div class="col-md-2 col-md-offset-5 text-center col-error">
-				<div ng-repeat="error in errorLetterList">
-					{{error}}&nbsp;<i class="fa fa-arrow-right"></i>&nbsp;<span class="normal">{{error}}</span>
+	<div class="col-xs-12 col-offset-top-3">
+		
+		<div class="row last-row">
+			<div class="row">
+				<div class="col-xs-2 text-center">
+					<button class="btn btn-info refresh" ng-click="generateData()"><i class="fa fa-refresh"></i></button>
+				</div>
+				<div class="col-xs-4 text-center">
+					<div ne-notification="'HandritingToScript'" class="alert-container"></div>
+				</div>
+				<div class="col-xs-6 text-center col-error">
+					<div class="row">
+						<div ng-repeat="error in errorLetterList" class="col-xs-4" style="overflow : hidden;">
+							<span class="handwriting">{{error}}</span>&nbsp;<i class="fa fa-arrow-right"></i>&nbsp;<span class="normal">{{error}}</span>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="col-md-12 col-offset-top-1">
-		<div class="row">
-			<div class="col-md-2 col-md-offset-5 text-center">
-				<button class="btn btn-info refresh" ng-click="generateData()"><i class="fa fa-refresh"></i></button>
-			</div>
-		</div>
+	<div class="col-xs-12 col-offset-top-1">
 	</div>
 	
 		

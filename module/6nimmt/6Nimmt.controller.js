@@ -1,4 +1,4 @@
-app.controller('6NimmtController',['$scope','NotificationService','$translate', function($scope,NotificationService,$translate) {
+app.controller('6NimmtController',['$scope','NotificationService','$translate','$rootScope', function($scope,NotificationService,$translate,$rootScope) {
 	$scope.numberList = [];
 	$scope.chosenNumber;
 	$scope.selectedNumberList = [];
@@ -6,6 +6,8 @@ app.controller('6NimmtController',['$scope','NotificationService','$translate', 
 	$scope.step1Ended = false;
 	$scope.step2Ended = false;
 	$scope.maxFound = false;
+	
+	$rootScope.helpURL = 'module/6nimmt/view/help.html'
 	
 	
 	$scope.generateData = function(){
